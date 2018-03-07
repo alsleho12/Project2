@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <title>모바일 사이트</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headerIn">
+                <!-- 오픈메뉴버튼 -->  
+                <div class="nav">
+                    <a href="#"><span class="fas fa-bars"></span></a>
+                </div>
+                
+                <!-- 로고 -->
+                <h1 class="logo"><a href="#"></a></h1>
+                
+                <!-- 서치 -->
+                <div class="search">
+                    <a href="#"><span class="fas fa-search"></span></a>
+                </div>
+            </div> <!-- #headerIn -->
+
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">Navigation Menu1</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+
+                    <li><a href="#">Navigation Menu2</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+                    
+                    <li><a href="#">Navigation Menu3</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+                    
+                    <li><a href="#">Navigation Menu4</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+                    
+                    <li><a href="#">Navigation Menu5</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+                    
+                    <li><a href="#">Navigation Menu6</a>
+                        <ul class="depth2">
+                            <li><a href="#">SubMenu_bar1</a></li>
+                            <li><a href="#">SubMenu_bar2</a></li>
+                            <li><a href="#">SubMenu_bar3</a></li>
+                            <li><a href="#">SubMenu_bar4</a></li>
+                        </ul><!-- depth2 -->
+                    </li>
+                </ul> 
+            </nav> <!-- #gnb -->
+
+            <div id="searchBar">
+                <input type="search" name="sch" id="sch" placeholder="검색란....">                
+            </div> <!-- #SearchBar -->
+        </header>
+
+
+        <main>
+            
+            
+            <div id="mainVisuel">
+                <a href=""></a>
+            </div> <!-- #MainVisuel -->
+
+            <div id="gall1">
+                <ul>
+                    <li><a href="#">
+                            <img src="http://via.placeholder.com/350x150" alt="#">
+                            <p class="conts">
+                                <span class="tit">이미지 제목</span>
+                                <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
+                            </p><!-- .conts -->
+                        </a>
+                            <p class="btn">
+                                <span class="good red">♥</span>
+                                <span class="recm" id="clickme1">추천: 0</span>
+                            </p><!-- .btn -->
+                    </li>
+
+                    <li><a href="#">
+                            <img src="http://via.placeholder.com/350x150" alt="#">
+                            <p class="conts">
+                                <span class="tit">이미지 제목</span>
+                                <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>    
+                            </p><!-- .conts -->
+                        </a>
+                            <p class="btn">
+                                <span class="good red">♥</span>
+                                <span class="recm" id="clickme2">추천: 0</span>
+                            </p><!-- .btn -->
+                    </li>
+
+                    <li><a href="#">
+                            <img src="http://via.placeholder.com/350x150" alt="#">
+                            <p class="conts">
+                                <span class="tit">이미지 제목</span>
+                                <span class="exp">이미지에 대한 내용을 설명하는 칸입니다.</span>
+                            </p><!-- .conts -->
+                        </a>
+                            <p class="btn">
+                                <span class="good red">♥</span>
+                                <span class="recm" id="clickme3">추천: 0</span>
+                            </p><!-- .btn -->
+                    </li>
+                    
+                </ul>
+            </div><!-- #gall1 -->
+            
+            <div id="choice">
+                <select class="selbox" onchange="setSelectText('searchSubCate',this)">
+                    <option value="show1">선택요소1</option>
+                    <option value="show2">선택요소2</option>
+                    <option value="show3">선택요소3</option>
+                    <option value="show4">선택요소4</option>
+                    <option value="show5">선택요소5</option>
+                </select>
+            </div> <!-- #choice -->
+            
+            <div class="showpic">
+                <div id="show1" class="mm">
+                    <img src="http://via.placeholder.com/350x150" alt="선택메뉴1">
+                    <p class="choice_text1">선택메뉴내용1</p>
+                </div>
+
+                <div id="show2" class="mm">
+                    <img src="http://via.placeholder.com/350x150" alt="선택메뉴1">
+                    <p class="choice_text2">선택메뉴내용2</p>
+                </div>
+
+                <div id="show3" class="mm">
+                    <img src="http://via.placeholder.com/350x150" alt="선택메뉴1">
+                    <p class="choice_text3">선택메뉴내용3</p>
+                </div>
+
+                <div id="show4" class="mm">
+                    <img src="http://via.placeholder.com/350x150" alt="선택메뉴1">
+                    <p class="choice_text4">선택메뉴내용4</p>
+                </div>
+
+                <div id="show5" class="mm">
+                    <img src="http://via.placeholder.com/350x150" alt="선택메뉴1">
+                    <p class="choice_text5">선택메뉴내용5</p>
+                </div>
+            </div> <!-- .chowpic -->
+
+            <div id="sumimg">
+                <div class="sum1">
+                    <img src="http://via.placeholder.com/80x150" alt="#">
+                    <p class="exp_1">
+                        <span class="title">
+                            내용주제글
+                        </span> <!-- .title -->
+                        <span class="sum1_exp1">
+                            내용 설명글
+                        </span> <!-- .sum1_exp1 -->
+                    </p> <!-- .exp_1 --> 
+                </div> <!-- .sum1 -->
+
+                <div class="sum2">
+                    <img src="http://via.placeholder.com/80x150" alt="#">
+                    <p class="exp_2">
+                        <span class="title">
+                            내용주제글
+                        </span> <!-- .title -->
+                        <span class="sum2_exp2">
+                            내용 설명글
+                        </span> <!-- .sum2_exp2 -->
+                    </p> <!-- .exp_2 --> 
+                </div> <!-- .sum2 -->
+
+                <div class="sum3">
+                    <img src="http://via.placeholder.com/80x150" alt="#">
+                    <p class="exp_3">
+                        <span class="title">
+                            내용주제글
+                        </span> <!-- .title -->
+                        <span class="sum3_exp3">
+                            내용 설명글
+                        </span> <!-- .sum3_exp3 -->
+                    </p> <!-- .exp_3 --> 
+                </div> <!-- .sum3 -->
+
+                <div class="sum_btn">
+                    <ul>
+                        <li><a href="#"><img src="http://via.placeholder.com/120x80" alt="#"></a></li>
+                        <li><a href="#"><img src="http://via.placeholder.com/120x80" alt="#"></a></li>
+                        <li><a href="#"><img src="http://via.placeholder.com/120x80" alt="#"></a></li>
+                    </ul>
+                </div>
+            </div><!-- #sumimg -->
+        </main>
+
+
+        <footer>
+            <nav id="fnav">
+                <ul>
+                    <li><a href="#">ADDRESS</a>
+                    <ul class="fdepth2">
+                        <li>
+                            <address>
+                                울산광역시<br>
+                                남구 삼산동 삼산타워 10층<br>
+                                그린컴퓨터아카데미<br>
+                            </address>
+                        </li><!-- .fdepth2 -->
+                    </ul>
+                    </li>
+
+                    <li><a href="#">저작권</a>
+                    <ul class="fdepth2">
+                        <li>
+                            <span class="knum">
+                                사업자등록번호 : 001-01-00001
+                            </span>
+                            <span class="cpy">
+                                ⓒ Copyeright GreenArt 2018. All right reserved.
+                            </span>
+                        </li>
+                    </ul><!-- .fdepth2 -->
+                    </li>
+                </ul>
+            </nav> <!-- #fnav -->
+            <div class="flogo">
+                <a href="#"></a>
+            </div>
+
+
+        </footer>
+        
+
+    </div>    
+</body>
+<script>
+
+/* 서치메뉴 */
+$(".search>a").click(function(){
+    $("#searchBar").slideToggle("500","easeOutBounce");
+});
+
+/* 아코디언 1단메뉴 */
+$(".nav>a").click(function(){
+    var poi = $("#gnb").css("display");
+    if(poi == "none"){
+        $("#gnb").show(100).animate({left:"0"});    
+    }else if(poi == "block"){
+        $("#gnb").animate({left:"-100%"});
+        $("#gnb").fadeOut(200);
+        $(".depth2").slideUp();
+
+    }
+});
+/* 아코디언 2단메뉴 */
+
+
+//$("#gnb>ul>li>a").click(function(){
+    //var tg = $(this).siblings(".depth2");
+    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
+    //var dis = tg.css("display")
+    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
+        속성값을 dis라는 변수 안에 넣어준다 */
+    
+/*     if(dis == "none"){
+        $(".depth2").slideUp();
+        $(this).siblings(".depth2").slideDown();
+        $("#gnb>ul>li>a").removeClass("on");
+        $(this).addClass("on")
+    }
+
+    if(dis == "block"){
+        $(this).siblings(".depth2").slideUp();
+        $(this).removeClass("on");
+    }
+    
+}); */
+ /* 또다른 2단메뉴 설정 */
+$("#gnb>ul>li>a").click(function(){
+    var dis = $(this).siblings(".depth2");
+    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
+    var two = dis.css("display")
+    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
+        속성값을 dis라는 변수 안에 넣어준다 */
+    
+    if(two == "none"){
+        $(".depth2").slideUp();
+        dis.slideDown();
+    }else if(two == "block"){
+        dis.slideUp();
+    }
+    return false;
+});
+
+/* 좋아요 버튼 */
+
+$(".btn>span.good").click(function(){
+    $(this).toggleClass("red");
+    return false;
+
+
+});
+
+/* 추천 버튼 */
+
+/* html문서 내부중 clickme라는 아이디명을 찾아 bttn이라는 변수안에 넣어 준다. */
+
+var count = 0;
+$("#clickme1").click(function(){
+    count += 1;
+    $("#clickme1").html("추천:" + count);
+    return false;
+});
+
+var count2 = 0;
+$("#clickme2").click(function(){
+    count2 += 1;
+    $("#clickme2").html("추천:" +count2);
+    return false;
+});
+
+var count3 = 0;
+$("#clickme3").click(function(){
+    count3 += 1;
+    $("#clickme3").html("추천:" + count3);
+    return false;
+});
+
+$(".selbox").change(function(){
+    $(".mm").hide();//현재 선택한 옵션 메뉴를 제외하고 다른 나머지 메뉴는 사라진다.
+    $("#"+$(this).val()).show();
+    /* 내가 선택한 옵션메뉴에 관련되는 value의 값과 일치하는 아이디 명을 가지고 있는 
+    메뉴만 나타내도록 해주는 구성 */
+
+});
+
+$("#fnav>ul>li>a").click(function(){
+    var diss = $(this).siblings(".fdepth2");
+    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
+    var twoo = diss.css("display")
+    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
+        속성값을 dis라는 변수 안에 넣어준다 */
+    
+    if(twoo == "none"){
+        $(".fdepth2").slideUp();
+        diss.slideDown();
+    }else if(twoo == "block"){
+        diss.slideUp();
+    }
+    return false;
+});
+
+$("#gall1 a").click(function(){
+    
+    $(this).find(".conts").slideToggle();
+    return false;
+})
+
+</script>
+</html>

@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+}
+
+header, main, footer{
+    position: relative;
+    width: 100%;
+}
+
+#headerIn{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* 밑부분에 그림자를 넣어주는것 */
+    /* box-shadow: X Y 불러값 색상값(0,0,0,0.5);(반투명) */ 
+}
+
+.nav, .search{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.nav{
+    left:10px;
+}
+
+.search{
+    right:10px;
+}
+
+.nav>a, .search>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.nav>a>span, .search>a>span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.fa-bars, .fa-search{
+    font-size: 30px;
+
+}
+
+.logo{
+    width: 120px;
+    height: 60px;
+}
+
+.logo>a{
+    display: block;
+    width: 120px;
+    height: 60px;
+    background: #ccc;
+}
+
+/* gnb부분 */
+
+#gnb{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:-100%;
+    background: beige;
+    display:none;
+    z-index: 999;
+}
+
+
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    text-indent: 10px;
+    padding: 10px 0;
+}
+
+#gnb>ul>li>a::after{
+    content: "▼";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.depth2{
+    display: none;
+}
+
+
+.depth2>li>a{
+    display: block;
+    padding:8px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+/* searchBar부분 */
+#searchBar{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ccc;
+    display: none;
+}
+
+#sch{
+    position: relative;
+    top:4px;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    background: rgba(255,255,255,0.5);
+    
+}
+
+/* Main부분 */
+
+#mainVisual{
+    width: 100%;
+    height: 300px;
+}
+
+#mainVisual>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url("http://via.placeholder.com/1920x1000") no-repeat center / cover;
+}
+
+#gall1{
+    width: 100%;
+    height: auto;
+    margin-top:20px;
+}
+
+#gall1>ul>li{
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
+#gall1>ul>li>a>img{
+    width: 100%;
+    height: auto;
+}
+
+.tit{
+    display: block;
+    font-size: 16px;
+    text-indent: 10px;
+    padding: 5px 0;
+
+}
+
+.exp{
+    display: block;
+    font-size: 14px;
+    text-indent: 30px;
+    padding: 5px 0;
+}
+
+.btn{
+    position: relative;
+    width: 80px;
+    margin-left:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.btn>span{
+    display: block;
+    cursor: pointer;
+}
+
+.good{
+    color:blue;
+    font-size: 20px;
+}
+
+.good.red{
+    color:red;
+}
+
+#show1, #show2, #show3,#show4, #show5{
+    position: relative;
+    display: none;
+
+}
+
+#choice, .showpic{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.showpic img{
+    width: 100%;
+    height: auto;
+}
+
+#sumimg{
+    width: 90%;
+    height: auto;
+    margin: 40px auto 0 auto;
+}
+
+.sum1, .sum2, .sum3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    margin-bottom:30px;
+}
+
+
+#sumimg>div>img{
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+#sumimg>div>p{
+    width: 70%;
+    height: auto;
+}
+
+.title{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 10px;
+}
+
+.sum1_exp1, .sum2_exp2, .sum3_exp3{
+    display: block;
+    font-size: 14px;
+    padding-top:10px;
+    text-indent:  10px;
+
+}
+
+/* .sum2, .sum3{
+    display: none;
+} */
+
+.sum_btn>ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sum_btn>ul>li{
+    width: 33.333%;
+    height: auto;
+
+}
+
+.sum_btn>ul>li>a{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.sum_btn>ul>li>a>img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+#fnav>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 0;
+    text-indent: 10px;
+    font-weight: 600;
+    
+}
+
+#fnav>ul>li>a::after{
+    position: absolute;
+    content: "▼";
+    display: block;
+    width: 30px;
+    height: 30px;
+    right:10px;
+    top:60%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+#fnav>ul>li{
+    background: rgb(26,26,26);
+    padding: 10px 0;
+}
+
+address, .knum, .cpy{
+    display: block;
+    width: 280px;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    margin-left:20px;
+    line-height: 21px;
+
+}
+
+.fdepth2{
+    display: none;
+}
+
+.flogo{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.flogo>a{
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background: url("http://via.placeholder.com/80x40") no-repeat;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.conts{
+    display:none;
+}
